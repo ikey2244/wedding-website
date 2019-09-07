@@ -3,25 +3,39 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
 const CoverPage = () => {
-  const data = useStaticQuery(graphql`
+  const {
+    coverImageDesktop,
+    coverImageMobile,
+  } = useStaticQuery(graphql`
     query {
-     file(relativePath: { eq: "cover-page-picture.jpg" }) {
+     coverImageDesktop: file(relativePath: { eq: "cover-page-picture.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+     coverImageMobile: file(relativePath: { eq: "cover-page-picture-mobile.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 420) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
     }
   `)
 
-  const imageData = data.file.childImageSharp.fluid
+const backgroundFluidImageStack = [
+  coverImageMobile.childImageSharp.fluid,
+  coverImageDesktop.childImageSharp.fluid,
+]
+
   return (
     <div>
       <BackgroundImage
           Tag="section"
           className='cover'
-          fluid={imageData}
+          fluid={backgroundFluidImageStack}
         >
         <div class="cover-container">
           <h1 style={{
