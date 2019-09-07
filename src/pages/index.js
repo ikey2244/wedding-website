@@ -21,8 +21,8 @@ const IndexPage = ({data}) => {
               fontSize: '64px',
               fontWeight: 'normal',
               marginBottom: '8px'
-            }}>May 23rd 2020</h1>
-            <p style={{
+            }} class="date">May 23rd 2020</h1>
+            <p class="text" style={{
               fontFamily: `Open Sans`,
               color: 'white',
               fontSize: '18px',
