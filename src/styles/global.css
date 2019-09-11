@@ -9,9 +9,23 @@
   }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 525px) {
+  .cover-container {
+    transform: translate(15%, 0);
+    top: 50px;
+  }
+  .date {
+    font-size: 48px !important;
+  }
+  .text {
+    max-width: 250px !important;
+  }
+}
+
+@media(max-width: 425px) {
   .date {
     font-size: 36px !important;
+    margin-bottom: 0;
   }
   .text {
     max-width: 250px !important;

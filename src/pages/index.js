@@ -55,7 +55,7 @@ const IndexPage = ({data}) => {
 
 export const pageQuery = graphql`
   query indexQuery {
-    heroMobile: file(relativePath: { eq: "cover-page-picture-mobile.jpg" }) {
+    heroMobile: file(relativePath: { eq: "cover-page-picture-mobile.png" }) {
       childImageSharp {
           fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
