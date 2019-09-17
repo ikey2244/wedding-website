@@ -8,21 +8,6 @@ const Container = styled.div`
   align-items: center;
 `
 
-const Overlay = styled.div`
-  width:80%;
-  text-align: center;
-  margin: 0px auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top:0;
-  bottom:0;
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  text-align: center;
-`
-
 const BgImage = styled(Image)`
   position: absolute;
   top: 0;
