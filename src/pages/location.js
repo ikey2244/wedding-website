@@ -1,10 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from '../components/Hero'
-import arrow from '../images/arrow.svg'
 import TextImage from '../components/text-image'
 
-const SecondPage = ({data}) => {
+const Location = ({data}) => {
   return (
     <>
       <Hero 
@@ -52,4 +51,4 @@ export const query = graphql`
   }
 `
 
-export default SecondPage
+export default Location
