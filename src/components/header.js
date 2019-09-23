@@ -18,10 +18,10 @@ const Header = () => (
           <Link to="/rsvp" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
             RSVP
           </Link>
-          <Link to="/home" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
+          <Link to="/our-story" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
             Our Story
           </Link>
-          <Link to="/" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
+          <Link to="/location" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
             Location
           </Link>
           <Link to="/" className="font-body block md:inline-block md:mt-0 text-white hover:text-white">

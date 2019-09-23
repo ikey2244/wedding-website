@@ -1,8 +1,8 @@
 import "./src/styles/global.css"
 import './src/styles/styles.css'
-import "typeface-great-vibes"
-import "typeface-poppins"
-import "typeface-josefin-sans"
+// import "typeface-great-vibes"
+// import "typeface-poppins"
+// import "typeface-josefin-sans"
 
 
 if (typeof window !== "undefined") {

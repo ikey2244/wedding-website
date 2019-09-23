@@ -37,7 +37,7 @@ const backgroundFluidImageStack = [
           className='cover'
           fluid={backgroundFluidImageStack}
         >
-        <div class="cover-container">
+        <div className="cover-container">
           <h1 style={{
             fontFamily: `Great Vibes`,
             color: 'white',
@@ -54,7 +54,7 @@ const backgroundFluidImageStack = [
             marginTop: '16px'
           }}>Save the date! We can’t wait to start this journey together.</p>
           <Link
-            to="/page-2"
+            to="/location"
             style={{
               background: 'white',
               height: '50px',

@@ -7,7 +7,6 @@ const Container = styled.div`
   position: relative;
   align-items: center;
 `
-
 const BgImage = styled(Image)`
   position: absolute;
   top: 0;
