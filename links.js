@@ -14,11 +14,11 @@ export const drink = {
 
 export const nashville = {
   data: [
-    {url: "http://www.foggybottomcanoe.com/p/main.html", name: "LA Jackson"},
-    {url: "https://topgolf.com/us/nashville/", name: "The Filling Station"},
-    {url: "https://nashvillefunforfamilies.com/centennial-park/", name: "Patterson House"},
-    {url: "http://www.arringtonvineyards.com", name: "Bastion"},
-    {url: "http://nashvilleguru.com/78126/celebrity-bars-in-nashville", name: "Tailgate Brewery"}
+    {url: "http://www.foggybottomcanoe.com/p/main.html", name: "Canoe Rental"},
+    {url: "https://topgolf.com/us/nashville/", name: "Top Golf"},
+    {url: "https://nashvillefunforfamilies.com/centennial-park/", name: "Centennial Park"},
+    {url: "http://www.arringtonvineyards.com", name: "Arrington Vineyards"},
+    {url: "http://nashvilleguru.com/78126/celebrity-bars-in-nashville", name: "Celebrity Bar Crawl"}
   ]
 }
 export const food = {
