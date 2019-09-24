@@ -10,7 +10,7 @@ class TextImage extends React.Component {
         <Img className="w-full sm:max-w-md" fluid={img} />
         
         <div className="text-left pl-6 md:text-center w-full mt-8 sm:mt-0">
-          <h1 className="font-display font-normal mb-2 sm:mb-4">{label}</h1>
+          <h1 className="font-display font-normal text-4xl mb-2 sm:mb-4">{label}</h1>
           <div className="pl-4 sm:ml-auto max-w-xs">
             <div className="text-left">
             {
