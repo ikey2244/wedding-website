@@ -10,9 +10,17 @@ const ourStory = ({data}) => {
         style={{height: '75vh'}}
         fluid={data.file.childImageSharp.fluid}
       >
+        <div className="absolute left-0 right-0">
+
+        <h1 className="font-display font-normal text-center text-4xl sm:text-5xl text-white">Countdown To The Wedding</h1>
         <CountdownContainer 
             targetDate={"2020-05-23 16:00:00"}
-          />
+            daysLabel="Days"
+            hoursLabel="Hours"
+            minutesLabel="Minutes"
+            secondsLabel="Seconds"
+            />
+        </div>
       </Hero>
     <Layout>
       <div className="flex border-2">
@@ -41,7 +49,7 @@ const ourStory = ({data}) => {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "location.png" }) {
+    file(relativePath: { eq: "countdown.jpg" }) {
       childImageSharp {
           fluid(maxWidth: 2000, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp

@@ -23,7 +23,7 @@ const CountdownContainer = ({
     remainingSeconds 
   } = remainingTime(targetDate, currentDate);
   return (
-    <div>
+      <div className="flex justify-center border-2 border-white mx-5 p-2 sm:max-w-sm sm:mx-auto">
       {!hideDays && <CountNumber 
         value={addPadding(isOver ? 0 : remainingDays)}
         label={daysLabel}
@@ -40,7 +40,7 @@ const CountdownContainer = ({
         value={addPadding(isOver ? 0 : remainingSeconds)}
         label={secondsLabel}
       />}
-    </div>
+      </div>
   );
 };
 
