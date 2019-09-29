@@ -12,14 +12,8 @@ const Header = () => {
   useOnClickOutside(node, () => setOpen(false));
   return (
     <header className="absolute top-0 right-0 left-0">
-      <div className="block md:hidden">
-        <ThemeProvider theme={theme}>
-          <div ref={node}>
-            <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-            <Menu open={open} setOpen={setOpen} id={menuId} />
-          </div>
-        </ThemeProvider>
-      </div>
+      <div className="overflow-hidden relative h-screen">
+
       <nav className="max-w-5xl mx-auto flex items-center justify-between flex-wrap px-6 mt-8 absolute top-0 right-0 left-0">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <span className="font-body font-light text-2xl tracking-tight">Ike & KR</span>
@@ -41,6 +35,15 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <div className="block md:hidden">
+        <ThemeProvider theme={theme}>
+          <div ref={node}>
+            <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+            <Menu open={open} setOpen={setOpen} id={menuId} />
+          </div>
+        </ThemeProvider>
+      </div>
+      </div>
     </header>
   )
 

@@ -18,11 +18,11 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 975,
+          // maxWidth: 975,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
-      >
+       className="max-w-5xl">
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
