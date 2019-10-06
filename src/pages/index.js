@@ -2,8 +2,9 @@ import React from "react"
 import {graphql, Link} from 'gatsby'
 import Hero from '../components/Hero'
 
-const IndexPage = ({data}) => {
-
+const IndexPage = (props) => {
+  console.log(props)
+  const {data} = props
   const sources = [
     data.coverMobile.childImageSharp.fluid,
     {

@@ -21,7 +21,7 @@ const Location = ({data}) => {
         style={{height: '75vh'}}
         fluid={data.file.childImageSharp.fluid}
       >
-        <div className="absolute left-0 right-0">
+        <div className="absolute left-0 right-0 z-10">
           <div className="text-center">
             <h1 className="text-white text-6xl font-display font-normal">Location</h1>
             <p className="text-3xl leading-tight text-white font-hero font-light my-8">1464 Big Bartons Creek Rd, Dickson, TN 37055</p>
