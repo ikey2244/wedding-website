@@ -54,7 +54,7 @@ const backgroundFluidImageStack = [
             marginTop: '16px'
           }}>Save the date! We can’t wait to start this journey together.</p>
           <Link
-            to="/location"
+            to="/our-story"
             style={{
               background: 'white',
               height: '50px',

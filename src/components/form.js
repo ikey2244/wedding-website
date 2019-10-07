@@ -32,7 +32,7 @@ export default function Form() {
   return (
     <div className="max-w-lg mx-auto">
       <form 
-      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"  
+      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mx-6"  
       name="contact"
       method="post"
       action="/thanks/"
@@ -40,27 +40,24 @@ export default function Form() {
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
     >
-      <h1 className="font-body text-lg text-center text-gray-700 mb-2">Rsvp</h1>
+      <h1 className="font-body text-lg text-center text-gray-700 mb-2">RSVP</h1>
       <p className="text-center text-gray-600 font-body">We'll see you there!</p>
 
         <div className="mb-2 ">
           <label className="block font-body text-gray-700 text-sm font-bold mb-2" htmlFor="fullName">Full Name</label>
-          <input className="text-body shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required type="text" id="fullName" placeholder="John Smith" name="fullName" onChange={handleChange} />
+          <input style={{fontFamily: 'poppins'}} className="text-body shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required type="text" id="fullName" placeholder="John Smith" name="fullName" onChange={handleChange} />
         </div>
         <div className="mb-2 ">
-          <label  className="block font-body text-gray-700 text-sm font-bold mb-2" htmlFor="email">Email</label>
-          <input className="text-body shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required type="email" id="email" placeholder="example@example.com" name="email" onChange={handleChange} />
+          <label className="block font-body text-gray-700 text-sm font-bold mb-2" htmlFor="email">Email</label>
+          <input  style={{fontFamily: 'poppins'}}className="text-body shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required type="email" id="email" placeholder="example@example.com" name="email" onChange={handleChange} />
         </div>
 
         <div className="mb-2">
-          <label  className="block font-body text-gray-700 text-sm font-bold mb-2" htmlFor="message">Suggest a Song</label>
-          <input className="text-body shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Song - Artist" name="songSuggestion" id="message" onChange={handleChange}></input>
+          <label className="block font-body text-gray-700 text-sm font-bold mb-2" htmlFor="message">Suggest a Song</label>
+          <input style={{fontFamily: 'poppins'}} className="text-body shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Song - Artist" name="songSuggestion" id="message" onChange={handleChange}></input>
         </div>
 
-        <button className="bg-red-400 text-white py-4 px-6 rounded block ml-auto font-body mt-4" type="submit">Send</button>
-        <div className="success-message">
-          <label></label>
-        </div>
+        <button className="bg-red-400 text-white py-2 px-4 rounded block ml-auto font-body mt-4" type="submit">Send</button>
       </form>
     </div>
   )

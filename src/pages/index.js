@@ -1,9 +1,8 @@
 import React from "react"
-import {graphql, Link} from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Hero from '../components/Hero'
 
 const IndexPage = (props) => {
-  console.log(props)
   const {data} = props
   const sources = [
     data.coverMobile.childImageSharp.fluid,
@@ -34,7 +33,7 @@ const IndexPage = (props) => {
             maxWidth: '309px'
           }}>Save the date! We can’t wait to start this journey together.</p>
           <Link
-            to="/location"
+            to="/our-story"
             style={{
               background: 'white',
               height: '50px',

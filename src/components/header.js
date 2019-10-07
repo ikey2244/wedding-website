@@ -11,17 +11,20 @@ const Header = () => {
   const menuId = "main-menu";
   useOnClickOutside(node, () => setOpen(false));
 
-  const isActive = ({ isCurrent }) => {
+  const isActive = ({isCurrent, href}) => {
     return isCurrent ? { className: "border-b-2 border-red-500 pb-1 font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6" } : null
   }
   
   return (
     <header className="absolute top-0 right-0 left-0">
       <div className="overflow-hidden relative h-screen">
-
         <nav className="max-w-5xl mx-auto flex items-center justify-between flex-wrap px-6 mt-8 absolute top-0 right-0 left-0 ">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
-            <span className="font-body font-light text-2xl tracking-tight">Ike & KR</span>
+            <span className="font-body font-light text-2xl tracking-tight">
+              <Link to="/location">
+                Ike & KR
+              </Link>
+            </span>
           </div>
           <div className="w-full block flex-end hidden md:flex md:items-center md:w-auto">
             <div className="text-md md:flex-grow">
@@ -34,7 +37,7 @@ const Header = () => {
               <Link getProps={isActive} to="/location" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
                 Location
               </Link>
-              <Link getProps={isActive} to="/" className="font-body block md:inline-block md:mt-0 text-white hover:text-white">
+              <Link getProps={isActive} to="/registry" className="font-body block md:inline-block md:mt-0 text-white hover:text-white">
                 Registry
               </Link>
             </div>

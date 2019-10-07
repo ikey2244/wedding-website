@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Hero from '../components/Hero'
 import CountdownContainer from "../components/coutdown-container"
 import Img from "gatsby-image"
+import { graphql } from 'gatsby'
 
 const ourStory = ({data}) => {
   return (
@@ -24,7 +25,7 @@ const ourStory = ({data}) => {
         </div>
       </Hero>
     <Layout>
-      <div className="flex-col md:flex md:flex-row mt-16">
+      <div className="flex-col md:flex md:flex-row mt-16 mb-16">
 
       <div className="w-full md:w-1/2" > 
         <h1 className="font-display font-normal text-4xl mb-4">Our Story</h1>
@@ -47,7 +48,7 @@ const ourStory = ({data}) => {
           <Img className="flex-1 mr-4" fluid={data.topLeftPick.childImageSharp.fluid} />
           <Img className="flex-1" fluid={data.topRightPick.childImageSharp.fluid} />
         </div>
-        <Img className="" fluid={data.bottomPic.childImageSharp.fluid} />
+        <Img fluid={data.bottomPic.childImageSharp.fluid} />
       </div>
       </div>
     </Layout>
