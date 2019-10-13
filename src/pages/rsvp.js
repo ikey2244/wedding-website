@@ -10,8 +10,7 @@ const Rsvp = ({data}) => {
       <Hero
           fluid={data.file.childImageSharp.fluid}
         >
-           <div className="absolute left-0 right-0 z-20">
-              <h1 className="font-display font-normal text-center text-white text-5xl mb-6">Join Us</h1>
+           <div className="absolute left-0 right-0 z-20 mt-8">
               <Form />
            </div>
         </Hero>
