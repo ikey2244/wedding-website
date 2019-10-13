@@ -8,7 +8,7 @@ const Thanks = ({data}) => {
     <Hero
       fluid={data.file.childImageSharp.fluid}
     >
-      <div className="absolute left-0 right-0">
+      <div className="absolute left-0 right-0 px-6">
         <div className="max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mx-6" >
           <h1 className="text-5xl text-gray-700 font-body">Thanks!</h1>
           <p className="text-gray-700 font-body">We have received your RSVP can't wait to see you!!</p>

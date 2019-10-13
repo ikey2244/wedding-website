@@ -25,7 +25,7 @@ const ourStory = ({data}) => {
         </div>
       </Hero>
     <Layout>
-      <div className="flex-col md:flex md:flex-row mt-16 mb-16">
+      <div className="flex-col md:flex md:flex-row mt-16 mb-16 px-6">
 
       <div className="w-full md:w-1/2" > 
         <h1 className="font-display font-normal text-4xl mb-4">Our Story</h1>
