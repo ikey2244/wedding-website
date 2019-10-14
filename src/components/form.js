@@ -11,6 +11,7 @@ export default function Form() {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
+    console.log(e.target.value)
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
@@ -58,8 +59,9 @@ export default function Form() {
             Response 
           </label>
           <div className="relative">
-            <select name="response" onChange={handleChange} className="text-body shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white" >
-              <option value="accept" defaultValue="accept">Accept</option>
+            <select required name="response" onChange={handleChange} className="text-body shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white" >
+              <option value="">Select Response</option>
+              <option value="accept">Accept</option>
               <option value="decline">Decline</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
