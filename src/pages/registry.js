@@ -2,6 +2,7 @@ import React from "react"
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
 import { graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 const Registry = ({data}) => {
   return (
@@ -16,9 +17,16 @@ const Registry = ({data}) => {
             </div>
           </div>
         </Hero>
-      <Layout >
-        <div className="mt-6">
-          <h1>Amazon</h1>
+      <Layout>
+        <div className="flex flex-col sm:flex-row justify-around w-full">
+          <div className="w-full p-8 sm:p-16 text-center">
+            <Img className="w-full sm:max-w-md" fluid={data.amazon.childImageSharp.fluid} />
+            <a className="bg-red-500 text-white text-lg font-hero rounded-full py-2 px-6 inline-block mt-8" target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/wedding/kathryn-rose-mello-isaac-weber-dickson-may-2020/registry/35K4J4MCX1GO9">View Registry</a>
+          </div>
+          <div className="w-full p-8 sm:p-16 text-center">
+            <Img className="w-full sm:max-w-md" imgStyle={{objectFit: "contain"}} fluid={data.bedBath.childImageSharp.fluid} />
+            <a className="bg-red-500 text-white text-lg font-hero rounded-full py-2 px-6 inline-block mt-8 pointer" target="_blank" rel="noopener noreferrer" href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/548110024?eventType=">View Registry</a>
+          </div>
         </div>
       </Layout>
     </>
@@ -30,6 +38,20 @@ export const query = graphql`
     file(relativePath: { eq: "mr-mrs.png" }) {
       childImageSharp {
           fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
+    amazon: file(relativePath: { eq: "amazon.png" }) {
+      childImageSharp {
+          fluid(maxWidth: 493, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
+    bedBath: file(relativePath: { eq: "bed-bath.png" }) {
+      childImageSharp {
+          fluid(maxWidth: 495, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
         }
       }

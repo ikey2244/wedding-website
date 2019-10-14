@@ -29,18 +29,10 @@ const ourStory = ({data}) => {
 
       <div className="w-full md:w-1/2" > 
         <h1 className="font-display font-normal text-4xl mb-4">Our Story</h1>
-        <p className="font-body leading-relaxed mr-0 md:mr-8">
-        We met each other on a dating app – yes an app! At the time,
-          I was just returning from a work trip to Ireland,
-          and Isaac was told by a friend to check out this app “Coffee Meets Bagel”. Although neither of us took online dating seriously,
-          we happened to match and shortly after that Isaac asked me out to coffee. He wore his camo Adidas shirt(which for those of you fortunate enough to know my stance on camo know this was a potential strike one in my book !)and had the sweetest smile and kindest eyes. What we both thought would be a quick coffee date turned into lunch…and 7 hours later we both left with a feeling that this might be more than just casual coffee. After 2 more dates,
-          we made it “official” and haven’t looked back since. We’ve become each other’s best friend,
-          adventure buddy,
-          and confidant. We’ve grown together in our love and knowledge of each other and of the Lord,
-          dreamt together of our future,
-          and made incredible memories. We both are beyond thankful for those in our lives who have encouraged us,
-          challenged us,
-          and loved us. Both of us cannot wait to share our wedding day with you and start our journey together as man and wife!
+        <p className="font-body leading-relaxed mr-0 mb-8 sm:mb-0 md:mr-5">
+        We met each other on a dating app – yes an app! We matched on "Coffee Meets Bagel" so naturally we went to a coffee shop on our first date!  What we both thought would be a quick date turned into lunch…and 7 hours later we both left with a feeling that this might be more than just something casual.
+        <br/>
+        <br/> After 2 more dates, we made it “official” and haven’t looked back since. We’ve become each other’s best friend, adventure buddy, and confidant. We’ve grown together in our love and knowledge of each other and of the Lord, dreamt together of our future, and made incredible memories. We both are beyond thankful for those in our lives who have encouraged us, challenged us, and loved us.  We cannot wait to share our wedding day with you and start our journey together as husband and wife!
         </p>
       </div>
       <div className="w-full md:w-1/2 ml-0 md:ml-4">

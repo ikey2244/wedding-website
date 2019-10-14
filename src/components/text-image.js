@@ -18,7 +18,7 @@ class TextImage extends React.Component {
                   return (
                     <>
                       <li key={i}>
-                        <a className="text-red-500 cursor-pointer underline mb-4 inline-block" href={v.url} target="_blank" rel="noopener noreferrer">{v.name}</a>
+                        <a className="text-red-500 cursor-pointer underline mb-4 inline-block pointer" href={v.url} target="_blank" rel="noopener noreferrer">{v.name}</a>
                       </li>
                     </>
                   )

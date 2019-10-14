@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Ike & KR`,
+    description: `Isaac Weber and Kathryn-Rose's wedding website.`,
+    author: `Isaac Weber`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -14,6 +14,12 @@ module.exports = {
           families: ['Great Vibes', 'Poppins', 'Josefin Sans']
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-149125053-1",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

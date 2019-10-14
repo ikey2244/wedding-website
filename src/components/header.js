@@ -28,16 +28,16 @@ const Header = () => {
           </div>
           <div className="w-full block flex-end hidden md:flex md:items-center md:w-auto">
             <div className="text-md md:flex-grow">
-              <Link getProps={isActive} to="/rsvp" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
+              <Link getProps={isActive} to="/rsvp" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
                 RSVP
               </Link>
-              <Link getProps={isActive} to="/our-story" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
+              <Link getProps={isActive} to="/our-story" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
                 Our Story
               </Link>
-              <Link getProps={isActive} to="/location" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6">
+              <Link getProps={isActive} to="/location" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
                 Location
               </Link>
-              <Link getProps={isActive} to="/registry" className="font-body block md:inline-block md:mt-0 text-white hover:text-white">
+              <Link getProps={isActive} to="/registry" className="font-body block md:inline-block md:mt-0 text-white hover:text-white pointer">
                 Registry
               </Link>
             </div>

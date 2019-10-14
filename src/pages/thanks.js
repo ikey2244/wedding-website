@@ -11,7 +11,7 @@ const Thanks = ({data}) => {
       <div className="absolute left-0 right-0 px-6">
         <div className="max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mx-6" >
           <h1 className="text-5xl text-gray-700 font-body">Thanks!</h1>
-          <p className="text-gray-700 font-body">We have received your RSVP can't wait to see you!!</p>
+          <p className="text-gray-700 font-body">We have received your RSVP!</p>
           <button className="bg-red-400 text-white py-2 px-4 rounded block font-body mt-4">
             <Link to="/location">
               Back to Site

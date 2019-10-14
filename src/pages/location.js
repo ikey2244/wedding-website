@@ -33,7 +33,7 @@ const Location = ({data}) => {
       <Layout className="max-w-4xl">
         <div className="text-center mt-10">
           <h1 className="text-4xl leading-tight font-normal font-display mb-4">Firefly Lane Wedding Venue</h1>
-          <p className="text-md max-w-2xl mx-auto leading-normal font-body font-light">Firefly is a charming location in Dickson TN. It’s a secluded area where we can have lots of fun. It’s about 45 minutes from one of the coolest cities, Nashville! We have put together a list of fun things to do in the area</p>
+          <p className="text-md max-w-2xl mx-auto leading-normal font-body font-light px-4">Firefly is a charming location in Dickson TN. It’s a secluded area where we can have lots of fun. It’s about 45 minutes from one of the coolest cities, Nashville! We have put together a list of fun things to do in the area</p>
         </div>
         <div>
           <TextImage label={todoLabel} links={nashville}  isRev img={data.nashville.childImageSharp.fluid}/>
