@@ -22,7 +22,7 @@ const IndexPage = (props) => {
             fontSize: '64px',
             fontWeight: 'normal',
             marginBottom: '8px'
-          }} className="date">May 23rd 2020</h1>
+          }} className="date">May 23rd, 2020</h1>
           <p className="text" style={{
             fontFamily: `Poppins`,
             color: 'white',

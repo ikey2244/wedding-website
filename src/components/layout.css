@@ -1,0 +1,12 @@
+.gallery-images {
+  width: calc(100% / 5);
+  flex-grow: 1;
+  margin: .5rem;
+}
+
+@media(max-width: 800px) {
+  .gallery-images {
+    width: 100%;
+    margin: 1rem;
+  }
+}

@@ -23,6 +23,8 @@ const Header = () => {
             <span className="font-body font-light text-2xl tracking-tight">
               <Link to="/location">
                 Ike & KR
+                <br/>
+                <span className="text-sm block">#myweberhalf</span>
               </Link>
             </span>
           </div>
@@ -37,8 +39,14 @@ const Header = () => {
               <Link getProps={isActive} to="/location" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
                 Location
               </Link>
-              <Link getProps={isActive} to="/registry" className="font-body block md:inline-block md:mt-0 text-white hover:text-white pointer">
+              <Link getProps={isActive} to="/gallery" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
+                Gallery
+              </Link>
+              <Link getProps={isActive} to="/registry" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
                 Registry
+              </Link>
+              <Link getProps={isActive} to="/accommodations" className="font-body block md:inline-block md:mt-0 text-white hover:text-white pointer">
+                Accommodations
               </Link>
             </div>
           </div>

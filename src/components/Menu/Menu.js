@@ -19,8 +19,14 @@ const Menu = ({ open, ...props }) => {
       <Link className="font-body"  to="/location" tabIndex={tabIndex}>
         Location
       </Link>
+      <Link className="font-body"  to="/gallery" tabIndex={tabIndex}>
+        Gallery
+      </Link>
       <Link className="font-body"  to="/registry" tabIndex={tabIndex}>
         Registry
+      </Link>
+      <Link className="font-body"  to="/accommodations" tabIndex={tabIndex}>
+        Accommodations
       </Link>
     </StyledMenu>
   )

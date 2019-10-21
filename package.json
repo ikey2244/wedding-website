@@ -29,6 +29,7 @@
     "react-dom": "^16.9.0",
     "react-final-form": "^6.3.0",
     "react-helmet": "^5.2.1",
+    "react-photo-gallery": "^8.0.0",
     "react-select": "^3.0.5",
     "smooth-scroll": "^16.1.0",
     "styled-components": "^4.4.0",
