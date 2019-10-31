@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Hero from '../components/Hero'
 import Gallery from '../components/Gallery'
-import { graphql, } from 'gatsby'
+import { graphql } from 'gatsby'
 const GalleryPage = ({data}) => {
   return (
     <>

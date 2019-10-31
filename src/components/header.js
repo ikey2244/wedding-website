@@ -14,6 +14,7 @@ const Header = () => {
   const isActive = ({isCurrent, href}) => {
     return isCurrent ? { className: "border-b-2 border-red-500 pb-1 font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6" } : null
   }
+
   
   return (
     <header className="absolute top-0 right-0 left-0">
@@ -55,7 +56,7 @@ const Header = () => {
           <ThemeProvider theme={theme}>
             <div ref={node}>
               <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-              <Menu open={open} setOpen={setOpen} id={menuId} />
+              <Menu open={open} setOpen={setOpen} id={menuId} isActive={isActive} />
             </div>
           </ThemeProvider>
         </div>

@@ -4,28 +4,34 @@ import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 import { Link } from "gatsby"
 
-const Menu = ({ open, ...props }) => {
+const Menu = ({ open, setOpen, ...props}) => {
+
   const isHidden = open ? true : false;
   const tabIndex = isHidden ? 0 : -1;
 
+  const closeMenu = () => {
+    setOpen(false)
+  }
+
+  
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <Link className="font-body"  to="/rsvp" tabIndex={tabIndex}>
+      <Link className="font-body" to="/rsvp" tabIndex={tabIndex} onClick={closeMenu}>
         RSVP
       </Link>
-      <Link className="font-body"  to="/our-story" tabIndex={tabIndex}>
+      <Link className="font-body" to="/our-story" tabIndex={tabIndex} onClick={closeMenu}>
         Our Story
       </Link>
-      <Link className="font-body"  to="/location" tabIndex={tabIndex}>
+      <Link className="font-body" to="/location" tabIndex={tabIndex} onClick={closeMenu}>
         Location
       </Link>
-      <Link className="font-body"  to="/gallery" tabIndex={tabIndex}>
+      <Link className="font-body" to="/gallery" tabIndex={tabIndex} onClick={closeMenu}>
         Gallery
       </Link>
-      <Link className="font-body"  to="/registry" tabIndex={tabIndex}>
+      <Link lassName="font-body" to="/registry" tabIndex={tabIndex} onClick={closeMenu}>
         Registry
       </Link>
-      <Link className="font-body"  to="/accommodations" tabIndex={tabIndex}>
+      <Link className="font-body" to="/accommodations" tabIndex={tabIndex} onClick={closeMenu}>
         Accommodations
       </Link>
     </StyledMenu>
