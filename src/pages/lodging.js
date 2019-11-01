@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Hero from '../components/Hero'
 import { graphql } from 'gatsby'
 
-const Accommodations = ({data}) => {
+const Lodging = ({data}) => {
   return (
     <>
       <Hero
@@ -12,7 +12,7 @@ const Accommodations = ({data}) => {
       >
         <div className="absolute left-0 right-0 z-10">
           <div className="text-center">
-            <h1 className="text-white text-6xl font-display font-normal">Accommodations</h1>
+            <h1 className="text-white text-6xl font-display font-normal">Lodging</h1>
           </div>
         </div>
       </Hero>
@@ -69,4 +69,4 @@ export const query = graphql`
   }
 `
 
-export default Accommodations
+export default Lodging
