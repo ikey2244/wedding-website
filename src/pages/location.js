@@ -24,8 +24,14 @@ const Location = ({data}) => {
         <div className="absolute left-0 right-0 z-10">
           <div className="text-center">
             <h1 className="text-white text-6xl font-display font-normal">Location</h1>
-            <p className="text-3xl leading-tight text-white font-hero font-light my-8">1464 Big Bartons Creek Rd, Dickson, TN 37055</p>
-            <a className="bg-red-500 text-white text-lg font-hero rounded-full py-3 px-6 inline-block" href="#more-info">More Info</a>
+            <p className="text-3xl leading-tight text-white font-hero font-light my-8">1406 Big Barton's Creek Rd. Dickson 37055</p>
+            <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://goo.gl/maps/qUrCPSZDUsk3qrkZ8"> 
+              Directions
+            </a>
+            <a className="bg-white text-black text-lg font-hero rounded-full ml-5 py-3 px-8 inline-block" href="#more-info">More Info</a>
           </div>
         </div>
       </Hero>
