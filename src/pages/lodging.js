@@ -21,7 +21,7 @@ const Lodging = ({data}) => {
         <div className=" flex flex-col flex-wrap lg:flex-row justify-around w-full z-20 relative">
           <div className="w-full lg:w-2/4 p-8 sm:p-16 text-center">
             <h1 className="text-3xl font-body">Best Western Dickson</h1>
-            <p> please call to reserve</p>
+            <p>Call and reserve a room under Isaac Weber</p>
             <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
               target="_blank"
               rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Lodging = ({data}) => {
           </div>
           <div className="w-full lg:w-2/4 p-8 sm:p-16 text-center">
             <h1 className="text-3xl font-body">Comfort Suites Airport</h1>
-            <p> please call to reserve</p>
+            <p>Call and reserve a room under Isaac Weber</p>
             <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
               target="_blank"
               rel="noopener noreferrer"
