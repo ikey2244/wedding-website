@@ -36,7 +36,7 @@ const Lodging = ({data}) => {
             <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://goo.gl/maps/qUrCPSZDUsk3qrkZ8"> 
+              href="https://goo.gl/maps/rXJt9opZjBW7CoiZA"> 
               Directions
             </a>
             <a className="bg-white border-2 border-black text-black text-lg font-hero rounded-full mt-5 ml-5 py-3 px-8 inline-block" href="tel:6154462781">(615) 446-2781</a>
