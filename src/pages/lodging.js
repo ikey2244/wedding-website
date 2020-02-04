@@ -18,11 +18,39 @@ const Lodging = ({data}) => {
       </Hero>
       <div id="more-info"></div>
       <Layout className="max-w-4xl">
-        <div className="text-center mt-10">
-          <h1 className="text-4xl leading-tight font-normal font-display mb-4">Coming Soon</h1>
-          <p className="text-md max-w-2xl mx-auto leading-normal font-body font-light px-4">We are still working on gathering some hotel suggestions - check back soon!</p>
-        </div>
-        <div>
+        <div className=" flex flex-col flex-wrap lg:flex-row justify-around w-full z-20 relative">
+          <div className="w-full lg:w-2/4 p-8 sm:p-16 text-center">
+            <h1 className="text-3xl font-body">Best Western Dickson</h1>
+            <p> please call to reserve</p>
+            <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://goo.gl/maps/bDRGE1kJWovWG61B6"> 
+              Directions
+            </a>
+            <a className="bg-white border-2 border-black text-black text-lg font-hero rounded-full mt-5 ml-5 py-3 px-8 inline-block" href="tel:6154460541">(615) 446-0541</a>
+          </div>
+          <div className="w-full lg:w-2/4 p-8 sm:p-16 text-center">
+            <h1 className="text-3xl font-body">Comfort Suites Airport</h1>
+            <p> please call to reserve</p>
+            <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://goo.gl/maps/qUrCPSZDUsk3qrkZ8"> 
+              Directions
+            </a>
+            <a className="bg-white border-2 border-black text-black text-lg font-hero rounded-full mt-5 ml-5 py-3 px-8 inline-block" href="tel:6154462781">(615) 446-2781</a>
+          </div>
+          <div className="w-full lg:w-2/4 p-8 sm:p-16 text-center">
+            <h1 className="text-3xl font-body mb-4">Holiday Inn Express & Suites Dickson</h1>
+            <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://goo.gl/maps/rXJt9opZjBW7CoiZA"> 
+              Directions
+            </a>
+            <a className="bg-white border-2 border-black text-black text-lg font-hero rounded-full mt-5 ml-5 py-3 px-8 inline-block" target="_blank" rel="noopener noreferrer" href="https://www.choicehotels.com/reservations/groups/GL74X3">Click Here To Reserve Rooms</a>
+          </div>
         </div>
       </Layout>
     </>
