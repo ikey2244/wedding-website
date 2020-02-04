@@ -18,7 +18,7 @@ const Lodging = ({data}) => {
       </Hero>
       <div id="more-info"></div>
       <Layout className="max-w-4xl">
-        <div className=" flex flex-col flex-wrap lg:flex-row justify-around w-full z-20 relative">
+        {/* <div className=" flex flex-col flex-wrap lg:flex-row justify-around w-full z-20 relative">
           <div className="w-full lg:w-2/4 p-8 sm:p-16 text-center">
             <h1 className="text-3xl font-body">Best Western Dickson</h1>
             <p>Call and reserve a room under Isaac Weber</p>
@@ -51,7 +51,7 @@ const Lodging = ({data}) => {
             </a>
             <a className="bg-white border-2 border-black text-black text-lg font-hero rounded-full mt-5 ml-5 py-3 px-8 inline-block" target="_blank" rel="noopener noreferrer" href="https://www.choicehotels.com/reservations/groups/GL74X3">Click Here To Reserve Rooms</a>
           </div>
-        </div>
+        </div> */}
       </Layout>
     </>
   )
