@@ -16,7 +16,7 @@ const ourStory = ({data}) => {
 
         <h1 className="font-display font-normal text-center text-3xl sm:text-5xl text-white mb-6">Countdown To The Wedding</h1>
         <CountdownContainer 
-            targetDate={"2020-05-23 16:00:00"}
+            targetDate={"2020-09-11 16:00:00"}
             daysLabel="Days"
             hoursLabel="Hours"
             minutesLabel="Minutes"

@@ -44,7 +44,7 @@ const backgroundFluidImageStack = [
             fontSize: '64px',
             fontWeight: 'normal',
             marginBottom: '8px'
-          }}>May 23rd 2020</h1>
+          }}>September 11th, 2020</h1>
           <p style={{
             fontFamily: `Open Sans`,
             color: 'white',

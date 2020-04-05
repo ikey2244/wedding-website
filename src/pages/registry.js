@@ -8,7 +8,7 @@ const Registry = ({data}) => {
   return (
     <>
       <Hero
-          style={{height: '75vh'}}
+          style={{height: '50vh'}}
           fluid={data.file.childImageSharp.fluid}
         >
           <div className="absolute left-0 right-0 z-10">
@@ -18,16 +18,10 @@ const Registry = ({data}) => {
           </div>
         </Hero>
       <Layout>
-        <div className="flex flex-col sm:flex-row justify-around w-full z-20 relative">
-          <div className="w-full p-8 sm:p-16 text-center">
-            <Img className="w-full sm:max-w-md" fluid={data.amazon.childImageSharp.fluid} />
+          <div className="w-full p-8 sm:p-16 text-center relative">
+            <Img className="w-full sm:max-w-md mx-auto z-10" fluid={data.amazon.childImageSharp.fluid} />
             <a className="bg-red-500 text-white text-lg font-hero rounded-full py-2 px-6 inline-block mt-8" target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/wedding/kathryn-rose-mello-isaac-weber-dickson-may-2020/registry/35K4J4MCX1GO9">View Registry</a>
           </div>
-          <div className="w-full p-8 sm:p-16 text-center">
-            <Img className="w-full sm:max-w-md" imgStyle={{objectFit: "contain"}} fluid={data.bedBath.childImageSharp.fluid} />
-            <a className="bg-red-500 text-white text-lg font-hero rounded-full py-2 px-6 inline-block mt-8 pointer" target="_blank" rel="noopener noreferrer" href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/548110024?eventType=">View Registry</a>
-          </div>
-        </div>
       </Layout>
     </>
   )
