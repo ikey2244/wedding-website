@@ -28,11 +28,14 @@ const Menu = ({ open, setOpen, ...props}) => {
       <Link className="font-body" to="/gallery" tabIndex={tabIndex} onClick={closeMenu}>
         Gallery
       </Link>
-      <Link lassName="font-body" to="/registry" tabIndex={tabIndex} onClick={closeMenu}>
+      <Link className="font-body" to="/registry" tabIndex={tabIndex} onClick={closeMenu}>
         Registry
       </Link>
       <Link className="font-body" to="/lodging" tabIndex={tabIndex} onClick={closeMenu}>
         Lodging
+      </Link>
+      <Link className="font-body" to="/covid" tabIndex={tabIndex} onClick={closeMenu}>
+        Covid
       </Link>
     </StyledMenu>
   )

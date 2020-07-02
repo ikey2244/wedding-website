@@ -46,8 +46,11 @@ const Header = () => {
               <Link getProps={isActive} to="/registry" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
                 Registry
               </Link>
-              <Link getProps={isActive} to="/lodging" className="font-body block md:inline-block md:mt-0 text-white hover:text-white pointer">
+              <Link getProps={isActive} to="/lodging" className="font-body block md:inline-block md:mt-0 text-white hover:text-white mr-6 pointer">
                 Lodging
+              </Link>
+              <Link getProps={isActive} to="/covid" className="font-body block md:inline-block md:mt-0 text-white hover:text-white pointer">
+                Covid
               </Link>
             </div>
           </div>

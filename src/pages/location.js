@@ -24,7 +24,8 @@ const Location = ({data}) => {
         <div className="absolute left-0 right-0 z-10">
           <div className="text-center">
             <h1 className="text-white text-6xl font-display font-normal">Location</h1>
-            <p className="text-3xl leading-tight text-white font-hero font-light my-8">1406 Big Barton's Creek Rd. Dickson 37055</p>
+            <p className="text-3xl leading-tight text-white font-hero font-light mb-4">1406 Big Barton's Creek Rd. Dickson 37055</p>
+            <p className="text-xl leading-tight text-white font-hero font-light mb-6">Ceremony at 4:00pm</p>
             <a className= "bg-red-500 text-white text-lg font-hero rounded-full py-3 px-8 inline-block"
               target="_blank"
               rel="noopener noreferrer"
